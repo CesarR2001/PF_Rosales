@@ -1,0 +1,166 @@
+/* Estilos CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+.page_footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 50px 0 30px;
+    margin-top: 40px;
+    }
+    .contact-info p {
+        color: #fff;
+        text-align: center;
+    }
+    .footer-copyright {
+        color: #666;
+        padding: 40px 0;
+        text-align: center;
+    }  
+/* Lo del Index*/
+.container{
+    display: flex;
+    text-align: center;
+}
+.container img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px; /* Centra la imagen y agrega margen inferior */
+    display: block; /* Para centrar correctamente en todos los navegadores */
+}
+
+.titulo_subtitulo{
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 5px;
+ }
+.titulo_subtitulo p {
+    font-size: 19px;
+}
+
+.product-container{
+    display: flex;
+    text-align: center;
+    margin: 1% auto 2%;
+}
+.product-container img {
+    width: 200px;
+    height: 185px;
+    margin: auto; 
+    display: block; /* Para centrar correctamente en todos los navegadores */
+}
+.product{
+    padding: 10px;
+    margin: 20px auto 20px;
+    border: 1px solid #ccc;
+}
+
+
+
+
+
+
+/*Aca Lo del login */        
+    .login-container {
+        background-color: #ffffffd6;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+    .login-container img {
+        width: 170px;
+        margin: 50px auto 50px; /* Centra la imagen y agrega margen inferior */
+        display: block; /* Para centrar correctamente en todos los navegadores */
+    }
+.login-container input {       
+    width: 35%;/* Ajusta el ancho del campo de entrada */
+    padding: 10px;
+    margin: 10px auto 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.login-container label{
+    font-size: 20px;
+    padding-top: 30px;
+    font-weight: normal;
+    display: block;
+}
+#buttom{
+    width: 15%;
+    margin: 15px auto 20px;
+} 
+
+/* ccs para la vista nosotros*/
+
+.container_nosotros {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1%;
+}
+.content {
+    display:flex;
+    margin: 1% auto 2%;
+    width: 70%;
+}
+.content p{
+    margin:5% 13% 5% 13%;
+    font-size: 20px;
+}
+.map img {
+    width: 280px; /* Ancho del mapa */
+    height: 250px; /* Altura del mapa */
+    border: 1px solid #ccc; /* Borde del mapa */
+    margin: 20px; /* Margen a la derecha para separar del texto */
+}
+
+#imgnosotros{
+
+    width: 260px;
+    height: 240px;
+    margin: auto; 
+    display: block; /* Para centrar correctamente en todos los navegadores */
+}
+
+/* css de celulares y audiculares*/
+.container_venta{
+    display:block;
+    text-align: center;
+}
+.container_venta img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Centra la imagen y agrega margen inferior */
+    display: block; /* Para centrar correctamente en todos los navegadores */
+}
