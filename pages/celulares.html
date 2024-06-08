@@ -4,17 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Link del css de bootstrap en mi proyecto -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    
 </head>
 <body>
     <header>
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="../pages/nosotros.html">Nosotros</a>
-            <a href="../pages/login.html">Login</a>
-            <a href="../pages/celulares.html">Celulares</a>
-            <a href="../pages/audiculares.html">Audiculares</a>
-            <a href="#footer">Contacto</a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">CellCity</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./celulares.html">Celulares</a></li>
+                        <li><a class="dropdown-item" href="./audiculares.html">Audiculares</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
         </nav>
     </header>
     <div class="container_venta">
@@ -29,8 +55,10 @@
         donde se muestresn todlos los productos que tengo disponibles
     pero por el momento puse una seccion con fotos de celulares -->
 
+
     <section> <!--Seguido de una paginacion para poder ver todos los productos cargados-->
-        <div class="product-container">
+        <h2>Celulares</h2>
+        <div class="grilla"> 
             <div class="product">
                 <h3>Modelo 1</h3>
                 <img src="../assets/images/iPhone!4Promax.jpg" alt="celuar1">
@@ -49,8 +77,6 @@
                 <p>Descripción producto:</p>
                 <p>Precio: $.....</p>
             </div>
-        </div>
-        <div class="product-container">
             <div class="product">
                 <h3>Modelo 4</h3>
                 <img src="../assets/images/pexels-garrettmorrow-1649771.jpg" alt="celular4">
@@ -70,32 +96,23 @@
                 <p>Precio: $.....</p>
             </div>
         </div>
-        <div class="product-container">
-            <div class="product">
-                <h3>Modelo 7</h3>
-                <img src="../assets/images/pexels-garrettmorrow-1649771.jpg" alt="celular7">
-                <p>Descripción producto:</p>
-                <p>Precio: $.....</p>
-            </div>
-            <div class="product">
-                <h3>Modelo 8</h3>
-                <img src="../assets/images/pexels-garrettmorrow-1649771.jpg" alt="celular8">
-                <p>Descripción producto:</p>
-                <p>Precio: $.....</p>
-            </div>
-            <div class="product">
-                <h3>Modelo 9</h3>
-                <img src="../assets/images/pexels-garrettmorrow-1649771.jpg" alt="celular9">
-                <p>Descripción producto:</p>
-                <p>Precio: $.....</p>
-            </div>
-        </div>
-        
     </section>
- 
-
-
-
+    <!-- Deberia ir vinculado la grilla y la paguinacion a una base de datos para poder cargar todos los productos-->
+    <nav class="paginacion">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item">  <a class="page-link" href="#">1</a></li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
 
     <footer class="page_footer" id="footer">
         <div class="contact-info">
@@ -111,6 +128,9 @@
         </div>
         <div class="footer-copyright">© 2024 Copyright:
             MyWebsite.com</div>
-</footer>
+    </footer>
+
+    <!-- script con el archivo JS de Boostrap en mi proyecto -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
