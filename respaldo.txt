@@ -1,0 +1,191 @@
+/* Estilos CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.page_footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 50px 0 30px;
+    margin-top: 40px;
+    }
+    .contact-info p {
+        color: #fff;
+        text-align: center;
+    }
+    .footer-copyright {
+        color: #666;
+        padding: 40px 0;
+        text-align: center;
+    }  
+/* Lo del Index*/
+
+.carousel-item img {
+    height: 800px; /* Ajusta el valor según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen cubra completamente el espacio asignado sin deformarse */
+  }
+  /* Estilo para el contenedor de título y subtítulo */
+  .titulo_subtitulo {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    padding: 10px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Alinea el texto al centro */
+  }
+section{
+    text-align: center;
+    margin: 2% auto 2%;
+}
+.grilla{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+
+    }
+
+.product img {
+    width: 200px;
+    height: 185px;
+    margin: auto; 
+    display: block; /* Para centrar correctamente en todos los navegadores */
+}
+.product{
+    padding: 10px;
+    margin: 20px auto 20px;
+    border: 1px solid #ccc;
+}
+
+
+
+
+
+
+/*Aca Lo del login */        
+    .login-container {
+        background-color: #ffffffd6;
+        border-radius: 10px;
+        padding: 2%;
+        text-align: center;
+        width: auto;
+    }
+    .login-container img {
+        width: 30%;
+        margin: 50px auto 50px; /* Centra la imagen y agrega margen inferior */
+        display: block; /* Para centrar correctamente en todos los navegadores */
+    }
+.login-container input {       
+    width: 45%;/* Ajusta el ancho del campo de entrada */
+    padding: 10px;
+    margin: 10px auto 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.login-container label{
+    font-size: 20px;
+    font-weight: normal;
+    display: block;
+}
+#buttom{
+    width: 30%;
+    margin: 15px auto 20px;
+} 
+
+/* ccs para la vista nosotros*/
+
+.container_nosotros {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1%;
+}
+.content {
+    display:flex;
+    margin: 1% auto 2%;
+    width: 70%;
+}
+.content p{
+    margin:5% 13% 5% 13%;
+    font-size: 20px;
+}
+.map img {
+    width: 280px; /* Ancho del mapa */
+    height: 250px; /* Altura del mapa */
+    border: 1px solid #ccc; /* Borde del mapa */
+    margin: 20px; /* Margen a la derecha para separar del texto */
+}
+
+#imgnosotros{
+
+    width: 260px;
+    height: 240px;
+    margin: auto; 
+    display: block; /* Para centrar correctamente en todos los navegadores */
+}
+
+/* css de celulares y audiculares*/
+.container_venta{
+    display:block;
+    text-align: center;
+}
+.container_venta img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Centra la imagen y agrega margen inferior */
+    display: block; /* Para centrar correctamente en todos los navegadores */
+}
+.paginacion {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+}
+
+
+
+
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 600px; /* Ajusta el valor según tus necesidades */
+        object-fit: cover; /* Asegura que la imagen cubra completamente el espacio asignado sin deformarse */
+      }
+    .product img {
+        width: 110px;
+        height: 100px;
+        margin: auto; 
+        display: block; /* Para centrar correctamente en todos los navegadores */
+    }
+    .product{
+        padding: 3px;
+        margin: 10px auto 10px;
+        border: 1px solid #ccc;
+    }
+  }
+
+@media (min-width: 768px) {
+    .grilla{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows:  2fr 2fr ;
+    }
+  }
+  
+  @media (min-width: 1280px){
+    .grilla{
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 1fr ;
+    }
+  }
