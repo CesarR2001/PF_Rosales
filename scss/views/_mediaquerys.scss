@@ -1,0 +1,30 @@
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 600px; /* Ajusta el valor según tus necesidades */
+        object-fit: cover; /* Asegura que la imagen cubra completamente el espacio asignado sin deformarse */
+    }
+
+    .product__grilla .product__container{
+        padding: 3px;
+        margin: 10px auto 10px;
+        border: 1px solid #ccc;
+        img {
+            width: 110px;
+            height: 100px;       
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .product__grilla{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:  2fr 2fr ;
+    }
+}
+  
+@media (min-width: 1280px){
+    .product__grilla{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr ;
+    }
+}

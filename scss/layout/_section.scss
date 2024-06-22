@@ -1,0 +1,24 @@
+.product__section{
+    text-align: center;
+    margin: 2% auto 2%;
+}
+
+.product__grilla{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+
+    .product__container{
+        padding: 10px;
+        margin: 20px auto 20px;
+        border: 1px solid $color-text-tertiary ;
+
+        img {
+            width: 200px;
+            height: 185px;
+            margin: auto; 
+            display: block; /* Para centrar correctamente en todos los navegadores */
+        }
+    }
+}

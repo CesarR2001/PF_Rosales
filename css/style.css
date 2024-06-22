@@ -1,8 +1,100 @@
+@charset "UTF-8";
 /* Fondo semitransparente */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.carousel-item img {
+  height: 800px; /* Ajusta el valor según tus necesidades */
+  object-fit: cover; /* Asegura que la imagen cubra completamente el espacio asignado sin deformarse */
+}
+
+/* Estilo para el contenedor de título y subtítulo */
+.titulo_subtitulo {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+  padding: 10px;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.product__section {
+  text-align: center;
+  margin: 2% auto 2%;
+}
+
+.product__grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+.product__grilla .product__container {
+  padding: 10px;
+  margin: 20px auto 20px;
+  border: 1px solid #ccc;
+}
+.product__grilla .product__container img {
+  width: 200px;
+  height: 185px;
+  margin: auto;
+  display: block; /* Para centrar correctamente en todos los navegadores */
+}
+
+.page__footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 50px 0 30px;
+  margin-top: 40px;
+  text-align: center;
+}
+.page__footer .page__footer__info {
+  color: #fff;
+}
+.page__footer .page__footer__copyright {
+  color: #666;
+  padding: 40px 0;
+}
+
+@media (max-width: 767px) {
+  .carousel-item img {
+    height: 600px; /* Ajusta el valor según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen cubra completamente el espacio asignado sin deformarse */
+  }
+  .product__grilla .product__container {
+    padding: 3px;
+    margin: 10px auto 10px;
+    border: 1px solid #ccc;
+  }
+  .product__grilla .product__container img {
+    width: 110px;
+    height: 100px;
+  }
+}
+@media (min-width: 768px) {
+  .product__grilla {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 2fr;
+  }
+}
+@media (min-width: 1280px) {
+  .product__grilla {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

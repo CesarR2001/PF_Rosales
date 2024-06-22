@@ -1,0 +1,16 @@
+.carousel-item img {
+    height: $height-img-carrosel; /* Ajusta el valor según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen cubra completamente el espacio asignado sin deformarse */
+  }
+  /* Estilo para el contenedor de título y subtítulo */
+  .titulo_subtitulo {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    background-color: $color-carrosel; /* Fondo semitransparente */
+    padding: 10px;
+    color: $color-text-secondary;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Alinea el texto al centro */
+  }
