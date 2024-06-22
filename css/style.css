@@ -54,6 +54,33 @@ header {
   display: block; /* Para centrar correctamente en todos los navegadores */
 }
 
+.login-container {
+  background-color: rgba(255, 255, 255, 0.8392156863);
+  border-radius: 10px;
+  padding: 2%;
+  text-align: center;
+  width: auto;
+}
+.login-container img {
+  width: 30%;
+  margin: 50px auto 50px; /* Centra la imagen y agrega margen inferior */
+  display: block; /* Para centrar correctamente en todos los navegadores */
+}
+.login-container input {
+  width: 45%; /* Ajusta el ancho del campo de entrada */
+  padding: 10px;
+  margin: 10px auto 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
+}
+.login-container label {
+  font-size: 20px;
+  font-weight: normal;
+  display: block;
+}
+
 .page__footer {
   background-color: #222;
   color: #ccc;
