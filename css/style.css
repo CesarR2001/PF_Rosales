@@ -96,6 +96,27 @@ header {
   padding: 40px 0;
 }
 
+.container__venta {
+  display: block;
+  text-align: center;
+}
+.container__venta img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Centra la imagen y agrega margen inferior */
+  display: block; /* Para centrar correctamente en todos los navegadores */
+}
+
+#buttom {
+  width: 30%;
+  margin: 15px auto 20px;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+}
+
 @media (max-width: 767px) {
   .carousel-item img {
     height: 600px; /* Ajusta el valor según tus necesidades */

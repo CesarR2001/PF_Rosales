@@ -1,0 +1,10 @@
+.container__venta{
+    display:block;
+    text-align: center;
+    img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px; /* Centra la imagen y agrega margen inferior */
+        display: block; /* Para centrar correctamente en todos los navegadores */
+    }
+}
