@@ -1,0 +1,26 @@
+.login-container {
+    background-color: #ffffffd6;
+    border-radius: 10px;
+    padding: 2%;
+    text-align: center;
+    width: auto;
+    img {
+        width: 30%;
+        margin: 50px auto 50px; /* Centra la imagen y agrega margen inferior */
+        display: block; /* Para centrar correctamente en todos los navegadores */
+    }
+    input {       
+        width: 45%;/* Ajusta el ancho del campo de entrada */
+        padding: 10px;
+        margin: 10px auto 20px;
+        border: 1px solid $color-text-tertiary;
+        border-radius: 5px;
+        box-sizing: border-box;
+        display: block;
+    }
+    label{
+        font-size: 20px;
+        font-weight: normal;
+        display: block;
+    }
+}

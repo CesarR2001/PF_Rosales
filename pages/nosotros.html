@@ -4,28 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Link del css de bootstrap en mi proyecto -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>    
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="../pages/nosotros.html">Nosotros</a>
-            <a href="../pages/login.html">Login</a>
-            <a href="../pages/celulares.html">Celulares</a>
-            <a href="../pages/audiculares.html">Audiculares</a>
-            <a href="#footer">Contacto</a>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">CellCity</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./celulares.html">Celulares</a></li>
+                        <li><a class="dropdown-item" href="./audiculares.html">Audiculares</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
         </nav>
     </header>
-
-    <div class="container_nosotros">
+    <div class="container__nosotros">
         <h2> Nosotros</h2>
         <div class="content"> <!--Texto explicando sobre la empresa-->
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla provident ea 
-                ipsam recusandae magni veniam laborum ex, est ipsa veritatis expedita voluptate in autem ullam 
-                corrupti commodi. Voluptatem officiis dolore, omnis assumenda cupiditate ullam praesentium reprehenderit,
-                ut dolores ad facilis sequi molestias ratione quo quos illo ipsam iure fuga autem animi eveniet nam rem.
-                </p>
+            <div class="info">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla provident ea 
+                    ipsam recusandae magni veniam laborum ex, est ipsa veritatis expedita voluptate in autem ullam 
+                    corrupti commodi. Voluptatem officiis dolore, omnis assumenda cupiditate ullam praesentium reprehenderit,
+                    ut dolores ad facilis sequi molestias ratione quo quos illo ipsam iure fuga autem animi eveniet nam rem.
+                    </p>
+            </div>
             <div class="map"> <!--ubicacion en el mapa-->
                 <!-- Aquí va el mapa se resolveria con una API pero por ahora voy a poner una imagen-->
                 <img src="../assets/images/pexels-lilartsy-3050833.jpg" alt="mapa">
@@ -34,26 +60,50 @@
         </div>
     </div>
     
-    <section> <!--Queria poner una especie de tarjetas o card con imagenes de un negocio pero por el momento reutilice el codigo para poner 3 imagenes -->
-    <div class="product-container">
-        <div class="product" > <!--Mostrar la empresa por dentro y por fuera-->
-            <img id="imgnosotros" src="../assets/images/pexels-flickr-156645.jpg" alt="Afuera del negocio ">
-            <p>Descripción breve.</p>
+    <section class="nosotros__section"> <!--Queria poner una especie de tarjetas o card con imagenes de un negocio pero por el momento reutilice el codigo para poner 3 imagenes -->
+        <div class="nosotros__grilla">
+            <div class="card">
+                <div class="card-header">
+                    <img src=../assets/images/pexels-miguel-galaz-2969450-11715244.jpg alt="Trabajando" class="card-img">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Título de la Tarjeta</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in augue nec velit pharetra congue.</p>
+                </div>
+                <div class="card-footer">
+                    <span class="card-date">Publicado el 21 de junio de 2024</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="../assets/images/pexels-flickr-156645.jpg" alt="Afuera del negocio " class="card-img">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Título de la Tarjeta</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in augue nec velit pharetra congue.</p>
+                </div>
+                <div class="card-footer">
+                    <span class="card-date">Publicado el 21 de junio de 2024</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="../assets/images/pexels-ivan-samkov-6968841.jpg" alt="Dentro del negocio" class="card-img">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Título de la Tarjeta</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in augue nec velit pharetra congue.</p>
+                </div>
+                <div class="card-footer">
+                    <span class="card-date">Publicado el 21 de junio de 2024</span>
+                </div>
+            </div>
         </div>
-        <div class="product" >
-            <img id="imgnosotros" src="../assets/images/pexels-ivan-samkov-6968841.jpg" alt="Dentro del negocio">
-            <p>Descripción breve.</p>
-        </div>
-        <div class="product">
-            <img id="imgnosotros" src="../assets/images/pexels-miguel-galaz-2969450-11715244.jpg" alt="Trabajando">
-            <p>Descripción breve.</p>
-        </div>
-
-    </div>
     </section>
 
-    <footer class="page_footer" id="footer">
-        <div class="contact-info">
+
+    <footer class="page__footer" id="footer"> <!--Buscar simbolos de redes sociales-->
+        <div class="page__footer__info">
             <div>
                 <p> Dirección: 123 Calle Principal, Ciudad, País</p>             
             </div>
@@ -64,8 +114,12 @@
                 <p>Correo electrónico: info@example.com</p>
             </div>
         </div>
-        <div class="footer-copyright">© 2024 Copyright:
+        <div class="page__footer__copyright">© 2024 Copyright:
             MyWebsite.com</div>
-</footer>
+    </footer>
+
+    <!-- script con el archivo JS de Boostrap en mi proyecto -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
