@@ -1,13 +1,18 @@
+@mixin grilla_item{
+    display: grid;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+
 .product__section{
     text-align: center;
     margin: 2% auto 2%;
 }
 
 .product__grilla{
-    display: grid;
+    @include grilla_item;
     grid-template-columns: 1fr 1fr;
-    column-gap: 5px;
-    row-gap: 5px;
 
     .product__container{
         padding: 10px;
@@ -22,3 +27,18 @@
         }
     }
 }
+
+.nosotros__section{
+    text-align: center;
+    margin: 2% auto 2%;
+}
+.nosotros__grilla{
+    @include grilla_item;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+
+
+
+

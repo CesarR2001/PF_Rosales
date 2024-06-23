@@ -8,3 +8,32 @@
         display: block; /* Para centrar correctamente en todos los navegadores */
     }
 }
+
+/* ccs para la vista nosotros*/
+
+.container__nosotros {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1%;
+}
+.content {
+    display: flex;
+    margin: 1% auto 2%;
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    .info{
+        width: 200%;
+        p{
+            margin:5% 10% 5% 10%;
+            font-size: 20px;
+        }
+    }
+    .map img {
+        width: 90%;
+        border: 1px solid #fff;
+        margin: 20px;
+    }
+}
+

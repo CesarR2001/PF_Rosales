@@ -13,18 +13,33 @@
             height: 100px;       
         }
     }
+
+    .nosotros__grilla{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .content{
+        flex-direction: column-reverse;
+
+        .info{
+            width: 100%;
+            p{
+                margin: 5% 1% 5%;
+                font-size: 18px;
+            }
+        }
+        .map img {
+            width: 70%;
+            border: 1px solid #fff;
+            margin: 20px;
+        }
+    }
 }
 
 @media (min-width: 768px) {
     .product__grilla{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows:  2fr 2fr ;
-    }
-}
-  
-@media (min-width: 1280px){
-    .product__grilla{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr ;
     }
 }

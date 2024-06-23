@@ -38,9 +38,9 @@ header {
 
 .product__grilla {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   column-gap: 5px;
   row-gap: 5px;
+  grid-template-columns: 1fr 1fr;
 }
 .product__grilla .product__container {
   padding: 10px;
@@ -52,6 +52,19 @@ header {
   height: 185px;
   margin: auto;
   display: block; /* Para centrar correctamente en todos los navegadores */
+}
+
+.nosotros__section {
+  text-align: center;
+  margin: 2% auto 2%;
+}
+
+.nosotros__grilla {
+  display: grid;
+  column-gap: 5px;
+  row-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
 }
 
 .login-container {
@@ -107,6 +120,34 @@ header {
   display: block; /* Para centrar correctamente en todos los navegadores */
 }
 
+/* ccs para la vista nosotros*/
+.container__nosotros {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.content {
+  display: flex;
+  margin: 1% auto 2%;
+  width: 90%;
+  text-align: center;
+  align-items: center;
+}
+.content .info {
+  width: 200%;
+}
+.content .info p {
+  margin: 5% 10% 5% 10%;
+  font-size: 20px;
+}
+.content .map img {
+  width: 90%;
+  border: 1px solid #fff;
+  margin: 20px;
+}
+
 #buttom {
   width: 30%;
   margin: 15px auto 20px;
@@ -115,6 +156,70 @@ header {
 .paginacion {
   display: flex;
   justify-content: center; /* Centra horizontalmente */
+}
+
+/* Estilos para la tarjeta */
+.card {
+  width: 90%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilos para la cabecera de la tarjeta */
+.card-header {
+  position: relative;
+  overflow: hidden;
+  padding: 0%;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-header:hover .card-img {
+  transform: scale(1.4);
+}
+
+/* Estilos para el cuerpo de la tarjeta */
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Estilos para el pie de la tarjeta */
+.card-footer {
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-date {
+  color: #999;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 767px) {
@@ -131,17 +236,30 @@ header {
     width: 110px;
     height: 100px;
   }
+  .nosotros__grilla {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .content {
+    flex-direction: column-reverse;
+  }
+  .content .info {
+    width: 100%;
+  }
+  .content .info p {
+    margin: 5% 1% 5%;
+    font-size: 18px;
+  }
+  .content .map img {
+    width: 70%;
+    border: 1px solid #fff;
+    margin: 20px;
+  }
 }
 @media (min-width: 768px) {
   .product__grilla {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 2fr 2fr;
-  }
-}
-@media (min-width: 1280px) {
-  .product__grilla {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
   }
 }
 
