@@ -4,13 +4,12 @@
         object-fit: cover; /* Asegura que la imagen cubra completamente el espacio asignado sin deformarse */
     }
 
-    .product__grilla .product__container{
-        padding: 3px;
-        margin: 10px auto 10px;
-        border: 1px solid $color-text-tertiary;
+    .product__grilla {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         img {
-            width: 110px;
-            height: 100px;       
+            max-width: 100%;
+            height: 25dvh;
+            border-bottom: 1px solid #ddd;
         }
     }
 
@@ -36,10 +35,25 @@
         }
     }
 }
-
-@media (min-width: 768px) {
-    .product__grilla{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows:  2fr 2fr ;
+@media (min-width){
+    .container__venta {
+        display: flex;
+        flex-direction: column; /* Alinea el contenido en una columna */
+        justify-content: center; /* Centra verticalmente el contenido */
+        align-items: center; /* Centra horizontalmente el contenido */
+        height: 80vh; /* Ocupa toda la altura de la ventana gráfica */
+        position: relative; /* Permite que los elementos internos se posicionen relativos a este contenedor */
     }
 }
+
+@media (min-width: 1200px)
+{
+    .product__grilla{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: 1fr 1fr 1fr;}
+        .container__venta {
+            height: 80vh; /* Ocupa toda la altura de la ventana gráfica */
+        }
+}
+
+
