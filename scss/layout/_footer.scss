@@ -1,14 +1,39 @@
 .page__footer{
     background-color: #222;
     color: $color-text-tertiary;
-    padding: 50px 0 30px;
+    padding: 50px 0 30px;;
     margin-top: 40px; 
     text-align: center;
+    border-top: 1px solid #e9ecef; /* Línea de separación en la parte superior */
     .page__footer__info{
         color: $color-text-secondary;
+        margin-bottom: 10px;
+        div{
+            margin-bottom: 10px;
+        }
     }
+
+    /* Estilos para los íconos de redes sociales */
+.page__footer__social {
+    margin-bottom: 15px;
+    a {
+        margin: 0 10px;
+        display: inline-block;
+    }
+    .social-icon {
+        width: 24px; /* Tamaño de los íconos */
+        height: auto; /* Mantiene la proporción */
+        transition: transform 0.3s ease;
+    }
+}
+
+.page__footer__social .social-icon:hover {
+    transform: scale(1.1); /* Escala los íconos al pasar el ratón */
+}
+
     .page__footer__copyright {
         color: #666;
-        padding: 40px 0;
+        padding: 25px 0;
+        font-size: 14px;
     }  
 }

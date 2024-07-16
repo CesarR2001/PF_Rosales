@@ -1,3 +1,12 @@
+@media (max-width: 480px) {
+    .page__footer__info {
+        font-size: 12px; /* Tamaño de fuente aún más pequeño en pantallas muy pequeñas */
+    }
+
+    .page__footer__social .social-icon {
+        width: 18px; /* Tamaño de íconos aún más pequeño en pantallas muy pequeñas */
+    }
+}
 @media (max-width: 767px) {
     .carousel-item img {
         height: 600px; /* Ajusta el valor según tus necesidades */
@@ -34,8 +43,20 @@
             margin: 20px;
         }
     }
+
+    .page__footer__info {
+        font-size: 14px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+
+    .page__footer__social {
+        margin-bottom: 5px;
+    }
+
+    .page__footer__social .social-icon {
+        width: 20px; /* Tamaño de íconos más pequeño en pantallas pequeñas */        margin: 0px; /* Espacio reducido entre íconos */
+    }
 }
-@media (min-width){
+@media (min-width:768px){
     .container__venta {
         display: flex;
         flex-direction: column; /* Alinea el contenido en una columna */
